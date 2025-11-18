@@ -4,11 +4,18 @@ import { MaterialIcons } from "@expo/vector-icons";
 import React from "react";
 import { StyleSheet, TextInput, TouchableOpacity, View } from "react-native";
 import { SafeAreaView } from "react-native-safe-area-context";
-export function Header (){
+
+interface HeaderProps {
+    setTermoDeBusca: (text: string) =>void;
+}    // Define o molde (Interface) para as propriedades.
+
+export function Header ({ setTermoDeBusca} : HeaderProps){    // Recebe a função 'setTermoDeBusca'
     return (
         <SafeAreaView style={styles.safeArea}>
           <View style={styles.container}>
-            <TextInput style={styles.searchInput} placeholder="Buscar produtos, marcas..."/>
+            <TextInput style={styles.searchInput}
+            placeholder="Buscar produtos, marcas..."
+            onChangeText= {setTermoDeBusca}/>
            <TouchableOpacity onPress={() => alert('Clicou!')}>
                 <MaterialIcons name="shopping-cart" size={28} color={"#FFFFFF"}/>
             </TouchableOpacity> 

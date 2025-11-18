@@ -1,5 +1,5 @@
 import { Product } from '../types/Product';
-export const MOCK_PRODUCTS: Product[] = [
+export const MOCK_PRODUCTS: Product[] = [     // Tipagem: Declara explicitamente que esta constante é um array do tipo 'Product'
     {
         id: 1,
         name:'Maçã Fuji',
