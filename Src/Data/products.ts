@@ -24,6 +24,18 @@ export const MOCK_PRODUCTS: Product[] = [
         price: 15.00,
         image: 'https://www.arenaatacado.com.br/on/demandware.static/-/Sites-storefront-catalog-sv/default/dw2ea30c2c/Produtos/846074-0000000057455-queijo%20parmesao%20peca%20kg-frios-1.jpg',
     },
+    {
+        id: 5,
+        name: 'Tomate',
+        price: 4.50,
+        image: "https://webrun.com.br/wp-content/uploads/2024/02/AdobeStock_69282769.jpeg",
+    },
+       {
+        id: 6,
+        name: 'Banana',
+        price: 6.00,
+        image: "https://www.cartacapital.com.br/wp-content/uploads/2025/09/banana-fruta-outono-1024x683.jpg",
+    },
 
 
 ];
